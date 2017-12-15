@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Red Club Brewing</title>
+	<link rel="icon" href="images/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="description" content="Red Club Brewing">
+	<meta name="keywords" content="Home,Brewing,Homebrewing,Beer,Recipes,General Awesomeness">
+	<meta name="author" content="Luke Smith">
+
+	<link href="css/rcbstyle.css" rel="stylesheet" type="text/css" /> <!-- link to external style sheet -->
+		<style>
+
+		</style>
+
+
+	</head>
+
+	<body id="bodybg">
+
+		<div id="wholesite">
+
+			<div id="logo"> <!-- logo container -->
+				<a href="assignment8.html" ><img id="logosizer" src="images/clubredsmaller.png"  alt="Red Club Brewing Logo" height=100 width=100 title="Red Club Brewing"></a>
+			</div>
+
+			<header id="headerwrap"> <!-- Header container -->
+				<h1>Red Club Brewing</h1>
+				<h3>The world would be a boring place if we all did the exact same things</h3>
+
+			</header>
+
+				<aside id="aside"> <!-- aside for navigation -->
+					<nav>
+						<ul>
+							<li><a href="beers.html">The Beers</a></li>
+							<li><a href="about.html">Our Story</a></li>
+							<li><a href="links.html">Favorite Places</a></li>
+							<li><a href="tools.html">Brewing Tools</a></li>
+						</ul>
+					</nav>
+
+				</aside>
+
+				<section id="maincontent"> <!-- Main Content Container -->
+					<img id="bodypic" src="images/beers.png" alt="Picture of Beers" title="Beer!" width=1500 height=660 />
+					<h4>Red Club Brewing doesnt make ordinary beers.</h4>
+					<p style="margin-top: .3%">Everthing here is just a little off,<br />even our name, <em>'Red Club Brewing'</em>.<br />Clubs are designed to be black.<br /><span style="margin-left: 10%">Not here.</span><br /> We take whats normal, turn it on its head and come up with something more interesting. We bring that idea into our beers. <br />If you want an average beer you know where you can find it. <br /><em>If you want something unique, find a <span class="theclub">Red Club</span>.</em></p>
+
+
+
+
+				</section><!-- end of Main Content Container -->
+
+
+			<footer id="footer"> <!-- Footer container -->
+				<a href="https://untappd.com/RedClubBrewing" target="_blank"><img class="socials" src="images/untappd.png" alt="Untappd" title="Untappd" width=252 height=252 /></a>
+				<a href="http://www.twitter.com" target="_blank"><img class="socials" src="images/twitter.png" alt="Twitter" title="Twitter" width=151 height=122 /></a>
+				<h5>Red Club Brewing MMXVI</h5>
+				<ul>
+					<li id = "kicker"><a href="beers.html">The Beers</a></li>
+					<li><a href="about.html">Our Story</a></li>
+					<li><a href="links.html">Favorite Places</a></li>
+					<li><a href="tools.html">Brewing Tools</a></li>
+				</ul>
+				<div id="additionalnav">
+					<ul>
+						<li><a href="#" onClick="window.open('basillime.html','Basil LIme Saison','resizable,height=925,width=750 left=500 top=40'); return false;">Basil Lime Saison</a></li>
+						<li><a href="#" onClick="window.open('owenbrau.html','Owenbrau','resizable,height=925,width=750 left=500 top=40'); return false;">Owenbrau</a></li>
+						<li><a href="#" onClick="window.open('taxlady.html','Dia the Tax Lady','resizable,height=925,width=750 left=500 top=40'); return false;">Dia the Tax Lady</a></li>
+						<li><a href="#" onClick="window.open('beestrees.html','Bees and Trees','resizable,height=925,width=750 left=500 top=40'); return false;">Bees and Trees</a></li>
+					</ul>
+				</div>
+
+			<!--Requirement 1
+
+			- Added a new page for Brewing Tools
+				-added a Specfic Gravity Calculator. Takes the current gallons of wort, and the current gravity and calculates the final gravity when given a final boil size in gallons. A very handy calculator for brewers
+					so that they know what their gravity will be after the boil is done, so they can calculate how much, if any, water or extra malt to add to reach their desired final gravity. The volume in gallons curently
+					is more than the Post boil gallons. For example, the gallons currently could be 7.5, the iniial specific gravity of the wort could be 1.054, and the desired post boil volume could be 5.5
+				-added an Alcohol by Volume calculator. Input the starting and final gravities and it will display the ABV. This is a common question on the homebrewing forums. It seems that many people do not know how to
+					to calculate this on their own, and often rely on other forum members to do it for them. The form the gravities should be input as, 1.053 for example. The final gravity is lower than the initial gravity
+					such as 1.002.
+				-added a search bar that can search either Google.com or BJCP.com. The search is to find out more information on a style of beer that you are interseted in.
+				-fixed all the external links so that they open into a new page instead of in the same window as the current page. This allows the user to stay on their current page, so they do not have to rely on
+					the back button to get back to the page they were on before they clicked a link.
+				-added CSS transform property to the images on the beers.html page. Made the beer images 5% larger on hover to make it more evident that the images are clickable links.
+				-added CSS to make the cursor stay an arrow throughout the entire document instead of changing to an I-bar when it goes over text.
+
+
+
+				Requirement 2
+					Implemented JavaScript in multiple places on the Brewing Tools (tools.hmtl) page. addEventListener's and Functions were used to make it functional. The descriptions of what the individual Javascript items
+					are in Req 1.
+			-->
+			</footer>
+
+		</div> <!-- end of whole page container -->
+
+
+
+	</body>
+
+</html>

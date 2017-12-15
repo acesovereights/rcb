@@ -1,0 +1,492 @@
+#wholesite{
+	width: 100%;
+	height: 100%;
+	/*background-color: #BFC5C7;*/
+	/*background-color: #e0dfdb;*/
+	margin: -9px;
+	text-shadow: 0 0 15px #ffff99;
+
+
+}
+/*
+body ::-webkit-scrollbar{width:9px;height:9px;}
+body ::-webkit-scrollbar-button:start:decrement,body ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+body ::-webkit-scrollbar-track-piece{background-color:#FAFAFA;-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+body ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}
+body ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#999;-webkit-border-radius:8px;}*/
+
+#bodybg{
+	background-image: url("../images/background5.jpg");
+	/*background-image: url("../images/background.png");*/
+	background-size: 100% 100%;
+	/*background-size: 1900px 975px;*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	text-shadow: 0 0 15px #ffff99;
+	cursor: default;
+
+}
+#selected{
+	text-shadow: 2px 2px 5px #ED1C24 !important;
+}
+.recipebox{
+	/*border: 1px solid black;*/
+	float: right;
+	margin: -8% 2% 10% 2%;
+	width: 33%;
+	height: 100%;
+	padding-top: .7%;
+}
+#untappd{
+	text-shadow: 2px 2px 5px #ED1C24 !important;
+	top: 0px;/*reset from other a css*/
+}
+.theclub{
+	/*color: #ED1C24 !important;*/
+	font-size: 150%;
+	text-shadow: 0 0 5px #ED1C24;
+	font-family: jd;
+	/*text-decoration: underline;*/
+
+
+}
+
+.recipetext{
+	/*border: 1px solid black;*/
+	width: 58%;
+	height: 100%;
+	float: right;
+	font-family: mail;
+	font-size: 1.2vw;
+	word-spacing: .1em;
+	letter-spacing: .08em;
+	line-height: 180%;
+	color: #454343; /* Graphite gray */
+
+}
+.recipetextblack{
+	/*border: 1px solid #2c2b2b;*/
+	width: 58%;
+	height: 100%;
+	float: right;
+	font-family: mail;
+	font-size: 1.2vw;
+	word-spacing: .1em;
+	letter-spacing: .08em;
+	line-height: 180%;
+	color: #2c2b2b;
+
+}
+#highlights{
+	text-align: left;
+	text-shadow: 0 0 15px #ffff99;
+}
+
+.right{
+	/*text-align: right;*/
+	text-align: left;
+	text-shadow: 0 0 15px #ffff99;
+}
+#recipebody{
+	width: 600px;
+	height: 800px;
+	margin: 0px;
+	/*border: 1px solid black;*/
+	background-size: 600px 800px;
+	background-image: url("../images/oldpaper.jpg");
+	background-repeat: no-repeat;
+}
+#links{
+	width: 40%;
+	height: 70%;
+	/*border: 1px black solid;*/
+	margin-left: -3%;
+	float: left;
+}
+#calc{
+	width: 45%;
+	height: 50%;
+	margin-left: -8%;
+	float: left;
+	text-align: right;
+	/*border: solid thin black;*/
+}
+#abv{
+	/*border: solid thin red;*/
+	float: left;
+	width: 100%;
+	text-align: right;
+}
+#submit{
+	float: right;
+}
+#linksdesc{
+	width: 60%;
+	height: 70%;
+	/*border: 1px black solid;*/
+	margin-left: 3%;
+	float: left;
+	line-height: 150%;
+}
+#linkslist{
+	font-size: 2.2vw;
+	float: left;
+}
+#linksinfo{
+	font-size: 1vw;
+	margin-top: 5.5%;
+	margin-left: -2%;
+}
+#linkslist li{
+	list-style: none;
+	margin-bottom: 6%;
+	text-align: right;
+}
+#linksinfo li{
+	list-style: none;
+	margin-bottom: 5%;
+	text-align: left;
+}
+/*body{
+	overflow:hidden;
+}*/
+#specs{/*recipe page only*/
+	/*border: solid black 1px;*/
+	width: 25%;
+	height: auto;
+	float: left;
+	clear: left;
+	margin-left: 8%;
+	padding-left: 5%;
+	padding-top: 8%;
+}
+.grains{
+	text-align: right;
+	padding-right: 12%;
+}
+#recipelist h1{
+	font-size: 4vw
+}
+#recipelist{/*recipe page only*/
+	/*border: solid 1px black;*/
+	width: 82%;
+	margin-left: 10%;
+	margin-top: 25%;
+	text-shadow: 0 0 15px #c6ae8b;
+	font-family: "jd";
+	font-size: 2vw;
+	line-height: 150%;
+	color: #454343; /* Graphite gray */
+	-ms-transform: rotate(-1.5deg); /* IE 9 */
+    -webkit-transform: rotate(-1.5deg); /* Chrome, Safari, Opera */
+    transform: rotate(-1.5deg);
+}
+#closer{
+	float: right;
+	margin-right: 7%;
+	margin-top: 7%;
+	font-size: 3vw;
+	position: absolute;
+}
+#specs li{
+	list-style: none;
+	font-size: 2.5vw;
+	line-height: 200%;
+}
+#glassimage{/*recipe page only*/
+	/*border: solid black 1px;*/
+	width: 30%;
+	height: auto;
+	margin: 15% 2% 0% 8%;
+	float: left;
+}
+#google{
+	height: 15%;
+	width: 37%;
+	float: right;
+
+	}
+#dropper{
+	margin-bottom: 5%;
+	font-size: 2.75vw;
+}
+.linepad{
+	padding-top: 6%;
+	padding-bottom: 3%;
+	font-size: 2.5vw
+}
+#stain{
+	float: right;
+}
+#beerimage{/*recipe page only*/
+	width: 100%;
+	height: auto;
+}
+#recipebg{/*recipe page only*/
+	margin-top: auto;
+	background-color: #454343;
+	width:736px;
+	height:900px;
+	background-image: url("../images/combo.png");
+	/*background-image: url("../images/oldpapertrans.png");*/
+	background-repeat: no-repeat;
+	background-size: 100% 102%;
+	float: right;
+	font-family: mail;
+	font-size: 2vw;
+	word-spacing: .1em;
+	letter-spacing: .08em;
+	line-height: 180%;
+	text-shadow: 0 0 15px #c6ae8b;
+	color: #454343; /* Graphite gray */
+	clear:both;
+
+}
+#logosizer{
+	width: 100%;
+	height: auto;
+}
+#bodypic{
+	width: 60%;
+	height: auto;
+	margin: -3% -3% .5% 2%;
+	float: right;
+}
+
+.beerpic{
+	height: 100%;
+	width: 100%;
+	max-width: 30%;
+	max-height: 285px;
+}
+.beerpic:hover{
+	transform: scale(1.05);
+}
+
+#headerwrap{
+	color: #454343; /* Graphite gray */
+	width: 68%;
+	/*border: solid black 1px;*/
+	margin: auto;
+	height: 100%;
+	margin-left: 2%;
+	margin-top: 2%;
+	float: left;
+	/*text-align: center; original*/
+	text-align: left;
+	font-family: "mail";
+	font-size: 2.75vw;
+	word-spacing: .1em;
+	letter-spacing: .08em;
+
+
+
+}
+#aside{
+	font-family: "mail";
+	color: #454343;
+	width: 14%;
+	/*border: solid #ED1C24 2px;*/
+	float: left;
+	height: 40%;
+	margin: 1% 1% .1% 9%;
+	padding-top: .1%;
+	padding-right: .5%;
+	clear: both;
+	font-size: 1.5vw;
+	line-height: 250%;
+	text-align: left;
+
+}
+#footer{
+	width: 90.5%;
+	/*border: solid black 1px;*/
+	margin: auto;
+	height: 5%;
+	clear: both;
+	padding-bottom: 5px;
+	color: black;
+	text-shadow: .5px .5px 2px #ED1C24;
+	/*color: #454343;
+	/*text-shadow: 2px 2px 1px black;*/
+	font-size: 1vw;
+
+}
+#maincontent{
+	/*font-family: "mail";*/
+	color: #454343;
+	/*color: #ECE5DB;*/
+	margin-left: 1%;
+	/*border: solid #919FAB 3px;*/
+	/*height: 475px; original size*/
+	height: 560px;
+	float: left;
+	margin-top: -4%;;
+	margin-bottom: 1.5%;
+	font-size: 1.2vw;
+	padding: 2%;
+	max-width: 65%;
+	font-family: "mail";
+	word-spacing: .1em;
+	letter-spacing: .08em;
+	line-height: 180%;
+	color: #454343; /* Graphite gray */
+}
+.info{
+	margin-left: 40%;
+	margin-top: -6%;
+
+}
+#linkscontent{
+	/*font-family: "mail";*/
+	color: #454343;
+	/*color: #ECE5DB;*/
+	margin-left: 1%;
+	/*border: solid #919FAB 3px;*/
+	/*height: 475px; original size*/
+	height: 560px;
+	float: right;
+	margin-top: -4%;
+	margin-bottom: 1.2%;
+	font-size: 1.2vw;
+	padding: 2%;
+	width: 70%;
+	font-family: "mail";
+	word-spacing: .1em;
+	letter-spacing: .08em;
+	line-height: 180%;
+	color: #454343; /* Graphite gray */
+
+}
+#logo{
+	width: 20%;
+	height: 20%;
+	margin-left: 5%;
+	margin-top: 2%;
+	/*border: solid black 1px;*/
+	float: left;
+
+
+}
+li{
+	list-style-image: url("../images/hopsgreen.png");
+}
+.socials{
+	display:inline;
+	float: right;
+	padding-left: .3%;
+	padding-right: .3%;
+	width: 3.5%;
+	height: auto;
+}
+header h1{
+	margin-top: -2%;
+	text-shadow: 2px 2px 5px #ED1C24 !important;
+}
+header h3{
+	margin-top: -6%;
+	text-align: right;
+	text-shadow: 0 0 15px #ffff99
+}
+h3{
+	padding-left: 4%;
+	padding-right: 4%;
+	font-size: 2.2vw;
+}
+h4{
+	margin-top: -1.5%;
+	font-size: 1.7vw;
+}
+h5{
+	float: left;
+	padding-left: 8%;
+	padding-right: 2%;
+}
+footer ul li{
+	display: inline;
+	float: left;
+	padding-right: 4%;
+
+}
+footer a{
+	color: black;
+}
+a{
+	text-decoration: none;
+	color: #454343;
+	position: relative;
+	top: -8px;
+
+}
+aside a:hover{
+	text-shadow: 2px 2px 5px #ED1C24 !important;
+	margin-bottom: .1%;
+	position: relative;
+	top: -10px;
+	/*bottom: -10px;*/
+}
+.recipebox h2 a:hover{
+	text-shadow: 2px 2px 5px #ED1C24;
+	margin-bottom: .1%;
+	position: relative;
+	top: -10px;
+	/*bottom: -10px;*/
+}
+
+#linkslist a:hover{
+	text-shadow: 2px 2px 5px #ED1C24;
+	margin-bottom: .1%;
+	position: relative;
+	top: -10px;
+	/*bottom: -10px;*/
+}
+
+footer a:hover{
+	text-shadow: 2px 2px 5px #ED1C24;
+	margin-bottom: .1%;
+	position: relative;
+	top: -10px;
+	/*bottom: -10px;*/
+}
+topsmallnav{
+	padding-right: 2%;
+}
+#kicker{
+	padding-left: 13%;
+	padding-right: 20%;
+}
+#additionalnav{
+	width: 40%;
+	float: left;
+	margin-top: -.8%;
+}
+@font-face{
+	font-family: "jd";
+	src: url("../fonts/jd.ttf");
+	src: url("../fonts/jd.eof");
+	src: url("../fonts/jd.woff");
+
+}
+@font-face{
+	font-family: "mail";
+	src: url("../fonts/mailartrubberstamp-regular.otf");
+	src: url("../fonts/mailartrubberstamp-regular.eot");
+	src: url("../fonts/mailartrubberstamp-regular.woff");
+}
+.mailfont{/*Mail Art font properties*/
+	font-family: "mail";
+	font-size: 20px;
+	word-spacing: .1em;
+	letter-spacing: .08em;
+	line-height: 180%;
+	color: #454343; /* Graphite gray */
+
+}
+.jdfont{ /* JD Font */
+	font-family: "jd";
+	font-size: 2vw;
+	line-height: 150%;
+	color: #454343; /* Graphite gray */
+}
+
+/*--------------------*/

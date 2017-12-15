@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Red Club Brewing Links</title>
+	<link rel="icon" href="images/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="description" content="Red Club Brewing">
+	<meta name="keywords" content="Home,Brewing,Homebrewing,Beer,Recipes,General Awesomeness,Favorite places, links">
+	<meta name="author" content="Luke Smith">
+
+
+	<!--<link rel="stylesheet" media="screen and (device-width: 960px) and (device-height: 640px)" href="css/smartphone.css" />-->
+	<link href="css/rcbstyle.css" rel="stylesheet" type="text/css" /> <!-- link to external style sheet -->
+		<style>
+
+
+		</style>
+
+	</head>
+
+	<body id="bodybg">
+		<div id="wholesite">
+
+			<div id="logo"> <!-- logo container -->
+				<a href="assignment8.html" ><img id="logosizer" src="images/clubredsmaller.png"  alt="Red Club Brewing Logo" title="Red Club Brewing"></a>
+			</div>
+
+			<header id="headerwrap"> <!-- Header container -->
+				<h1>Red Club Brewing</h1>
+				<h3>Brewing Tools</h3>
+
+			</header>
+
+				<aside id="aside"> <!-- aside for navigation -->
+					<nav>
+						<ul>
+							<li><a href="beers.html">The Beers</a></li>
+							<li><a href="about.html">Our Story</a></li>
+							<li><a href="links.html">Favorite Places</a></li>
+							<li id="selected"><a href="tools.html">Brewing Tools</a></li>
+						</ul>
+					</nav>
+
+				</aside>
+
+				<section id="linkscontent"> <!-- Main Content Container -->
+					<div id="calc">
+						<h3>Specfic Gravity Calculator</h3>
+						<p>Enter the gallons of wort currently <input type="text" id="gallons" size="5"/></p>
+						<p>Enter the specific gravity of the wort <input type="text" id="sg" size="5"/></p>
+						<p>Enter the desired post boil gallons <input type="text" id="final" size="5"/></p>
+						<input type="submit" id="submit" value="Calculate Post Boil SG" /><br />
+						<h3 id="finalGravity"></h3>
+
+
+						<!--<ul id="linkslist">
+
+						</ul>-->
+					</div>
+					<div id="linksdesc">
+						<div id="abv">
+						<h3>Alcohol By Volume Calculator</h3>
+						<p>Enter the starting gravity (in s.g.) <input type="text" id="starting" size="5"/></p>
+						<p>Enter the final gravity (in s.g.) <input type="text" id="finalg" size="5"/></p>
+
+						<input type="submit" id="submitabv" value="Calculate ABV" />
+						<h3 id="ABV"></h3>
+
+
+						<!--<ul id="linkslist">
+
+						</ul>-->
+						</div>
+
+					</div><!-- end of Main Content Container -->
+					<div id="google">
+						<form method="get" action="http://www.google.com/search" target="_blank">
+							<input type="text" name="q" size="31" maxlength="255" value="" />
+							<input type="submit" value="Beer Search" />
+							<input type="radio" name="sitesearch" value="" /> The Web
+							<input type="radio" name="sitesearch" value="www.bjcp.org" checked /> Search BJCP.org<br />
+						</form>
+					</div>
+					<!--<input id="google"><button id="search">Search BJCP</button>-->
+
+
+
+
+				</section>
+
+
+			<footer id="footer"> <!-- Footer container -->
+				<a href="https://untappd.com/RedClubBrewing" target="_blank"><img class="socials" src="images/untappd.png" alt="Untappd" title="Untappd" width=252 height=252 /></a>
+				<a href="http://www.twitter.com" target="_blank"><img class="socials" src="images/twitter.png" alt="Twitter" title="Twitter" width=151 height=122 /></a>
+				<!--<h5>Red Club Brewing MMXVI</h5>-->
+				<h5>&copy; 2000<script>new Date().getFullYear()>2000&&document.write("-"+new Date().getFullYear());</script>, Red Club Brewing.</h5>
+				<ul>
+					<li id = "kicker"><a href="beers.html">The Beers</a></li>
+					<li><a href="about.html">Our Story</a></li>
+					<li><a href="links.html">Favorite Places</a></li>
+					<li><a href="tools.html">Brewing Tools</a></li>
+				</ul>
+				<div id="additionalnav">
+					<ul>
+						<li><a href="#" onClick="window.open('basillime.html','Basil LIme Saison','resizable,height=925,width=750 left=500 top=40'); return false;">Basil Lime Saison</a></li>
+						<li><a href="#" onClick="window.open('owenbrau.html','Owenbrau','resizable,height=925,width=750 left=500 top=40'); return false;">Owenbrau</a></li>
+						<li><a href="#" onClick="window.open('taxlady.html','Dia the Tax Lady','resizable,height=925,width=750 left=500 top=40'); return false;">Dia the Tax Lady</a></li>
+						<li><a href="#" onClick="window.open('beestrees.html','Bees and Trees','resizable,height=925,width=750 left=500 top=40'); return false;">Bees and Trees</a></li>
+					</ul>
+				</div>
+
+			</footer>
+
+		</div> <!-- end of whole page container -->
+
+		<script>
+
+
+			var sugars = 0, startGallons = 0, OG = 0, targetGallons = 0, FG =0;
+			var gallonsid = document.getElementById("gallons");
+			var sgid = document.getElementById("sg");
+			var finalid = document.getElementById("final");
+			var items = document.getElementsByTagName("input");
+
+			for(var i = 0; i<items.length; i++){
+				items[i].style.backgroundColor="#EDCC7B";
+				items[i].style.color="#454343";
+				items[i].style.textAlign="right";
+				items[i].style.fontSize="1.2vw";
+				items[i].style.fontFamily="mail";
+			}
+
+
+
+
+			function calcFg(){
+
+				startGallons = document.getElementById("gallons").value*1;
+				OG = document.getElementById("sg").value*1;
+				targetGallons = document.getElementById("final").value*1;
+				sugars = ((OG-1)*1000) * startGallons;
+				FG = (sugars / targetGallons)/1000 +1;
+				var finalGravityOutput = "Your final gravity should be "+FG.toPrecision(4);
+				document.getElementById("finalGravity").style.textShadow="0 0 10px #ED1C24";
+				document.getElementById("finalGravity").innerHTML = finalGravityOutput;
+
+			}
+
+			function abv(){
+
+				//var multiplier = (1.05/0.79);
+				var OGabv = document.getElementById("starting").value*1;
+				var FGabv = document.getElementById("finalg").value*1;
+				var abv = (76.08 * (OGabv-FGabv)/(1.775-OGabv))*(FGabv / 0.794);
+				abv = abv.toFixed(2);
+				var finalabv = abv+"% ABV";
+				document.getElementById("ABV").style.textShadow="0 0 10px #ED1C24";
+				document.getElementById("ABV").innerHTML = finalabv;
+
+			}
+
+
+			document.getElementById("submit").addEventListener("click",calcFg,false);
+			document.getElementById("submitabv").addEventListener("click",abv,false);
+
+
+
+
+		</script>
+	</body>
+
+</html>
